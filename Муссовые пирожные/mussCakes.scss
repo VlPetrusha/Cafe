@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import '../burger';
+/*Общие стили---------------*/
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #1f1f1f;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*-------------------HEADER start------------------------*/
+.header {
+  margin: 20px 0;
+  min-height: 63px;
+}
+
+.header__nav li + li {
+  //те, которые имеют соседа слева
+  margin-left: 40px;
+}
+
+.locale {
+  border-left: 1px solid #a69b7b;
+  padding-left: 30px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  ul {
+    display: flex;
+  }
+
+  li:last-child {
+    margin-left: 1.73px;
+  }
+
+  a {
+    font-size: 14px;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: #a69b7b;
+    }
+  }
+}
+
+/*-------------------HEADER end------------------------*/
+
+/*-------------------PRODUCTS start------------------------*/
+
+.products {
+  margin: 15px 0;
+  // min-height: 63px;
+}
+
+.products__nav li + li {
+  //те, которые имеют соседа слева
+  margin-left: 40px;
+}
+
+.products__container {
+  display: flex;
+  justify-content: end;
+}
+
+.products__nav {
+  ul {
+    display: flex;
+  }
+
+  a {
+    font-size: 14px;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: #a69b7b;
+    }
+  }
+}
+
+/*-------------------PRODUCTS end------------------------*/
+
+/*-------------------THIS start------------------------*/
+
+.this__container {
+  border-bottom: 1px solid #a69b7b;
+}
+
+.this__heading {
+  margin-left: 102px;
+}
+
+.this__nav li + li {
+  //те, которые имеют соседа слева
+  margin-left: 40px;
+}
+
+.items__list {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  margin: 88px 0 79px;
+
+  & li a {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.this__nav a {
+  font-size: 14px;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: #a69b7b;
+  }
+}
+
+.this__product {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 65px;
+
+  color: #1f1f1f;
+}
+
+.heading__line {
+  margin-top: 20px;
+  width: 171px;
+}
+
+.this__foot {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+
+  & .product_pic {
+    transform: translateY(20px);
+  }
+}
+
+.title {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-------------------THIS end------------------------*/
+
+/*-----------------Menu start-----------------*/
+
+.menu {
+  margin: 100px 0 40px;
+  padding: 40px 0;
+  color: #babfbf;
+
+  background-color: #2e2e2e;
+
+  // border-bottom: 1px solid #A69B7B;
+}
+
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 1.5rem;
+  padding-top: 31px;
+}
+
+.menu__container .box {
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 40vh;
+
+  &:hover {
+    transition: 0.3s;
+
+    transform: scale(1.05);
+  }
+}
+
+.box__title {
+  padding: 20px 0 10px;
+
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.box__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #a69b7b;
+}
+
+.box1 {
+  background-image: url(/images/фрейзи.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.box2 {
+  background-image: url(/images/лоуре.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.box3 {
+  background-image: url(/images/шоколады.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.box4 {
+  background-image: url(/images/малина.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 30px;
+}
+
+.box5 {
+  background-image: url(/images/трио.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.box6 {
+  background-image: url(/images/апельсинка.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.box7 {
+  background-image: url(/images/грас.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.box8 {
+  background-image: url(/images/бордо.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.footer {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/*-----------------Menu end-----------------*/
+
+/*-----------------Footer start-----------------*/
+
+.img__container {
+  border-top: 1px solid #a69b7b;
+}
+
+.name {
+  margin: 53px 420px;
+
+  // font-weight: 700;
+  // font-size: 128px;
+  // line-height: 150px;
+  // padding: 53px 0 54px;
+  // text-align: center;
+}
+/*-----------------Footer end-----------------*/
+
+@media (max-width: 800px) and (min-width: 601px) {
+  .this__foot .product_pic {
+    transform: translateX(-25vw);
+
+    z-index: -1;
+  }
+
+  .menu__container {
+    grid-template-columns: repeat(2, 45%);
+    align-items: center;
+  }
+
+  .menu__container .box {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 100px) {
+  .name {
+    width: 75vw;
+  }
+  .menu__container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2vh;
+  }
+
+  .this__foot {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 2vh;
+  }
+
+  .this__product {
+    font-size: 2em;
+
+    text-align: center;
+  }
+
+  .this__nav {
+    width: 40vw;
+  }
+
+  .items__list {
+    display: none;
+  }
+
+  .this__heading {
+    margin: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger__instead {
+    display: none !important;
+  }
+
+  .this__foot .product_pic {
+    width: 50vw;
+  }
+
+  .menu__container .box {
+    height: 35vh;
+  }
+}

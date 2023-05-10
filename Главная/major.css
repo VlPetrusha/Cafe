@@ -1,0 +1,392 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+body.opened,
+html.opened {
+  overflow: hidden;
+}
+
+.burger {
+  transition: 0.3s;
+  display: none;
+  fill: #1f1f1f !important;
+  cursor: pointer;
+}
+.burger:hover {
+  transition: 0.3s;
+  scale: 1.05;
+}
+
+.burger_instead {
+  display: flex;
+}
+
+.burger_meny {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+  padding-top: 2vh;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  color: #1f1f1f;
+  z-index: 10;
+}
+.burger_meny a {
+  transition: 0.3s;
+  font-size: 1.2em;
+  text-decoration: none;
+  cursor: pointer;
+  background-image: linear-gradient(#1f1f1f, #1f1f1f);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  color: #1f1f1f;
+}
+.burger_meny a:hover {
+  transition: 0.3s;
+  background-size: 100% 3px;
+}
+.burger_meny .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+.burger_meny .logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+  cursor: default;
+}
+.burger_meny .logo svg {
+  width: 7vh;
+  height: 7vh;
+  cursor: pointer;
+}
+.burger_meny .logo svg path {
+  transition: 0.3s;
+}
+.burger_meny .logo svg:hover {
+  transition: 0.3s;
+}
+.burger_meny .logo svg:hover path {
+  transition: 0.3s;
+  fill: #d6062c;
+}
+.burger_meny .logo h1 {
+  color: #d6062c;
+}
+
+/*Общие стили---------------*/
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #babfbf;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*-------------------HEADER------------------------*/
+.header {
+  min-height: 626px;
+  padding: 20px 0;
+  background-color: #0b0f10;
+  background-image: url(/images/Кексы.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__nav li + li {
+  margin-left: 40px;
+}
+
+.header__burger {
+  display: block;
+}
+
+@media (max-width: 2000px) and (min-width: 768px) {
+  .header__burger {
+    display: none;
+  }
+}
+.chek {
+  display: none;
+}
+
+.locale {
+  border-left: 1px solid #a69b7b;
+  padding-left: 30px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav ul {
+  display: flex;
+}
+.header__nav li:last-child {
+  margin-left: 1.73px;
+}
+.header__nav a {
+  font-size: 14px;
+  transition: color 0.2s linear;
+}
+.header__nav a:hover {
+  color: #a69b7b;
+}
+
+.welcome {
+  padding: 150px 0;
+}
+
+.welcome__heading {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  width: 60vw;
+  margin-bottom: 60px;
+}
+
+.welcome__text {
+  width: 60vw;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/*-----------------Menu start-----------------*/
+.menu {
+  width: 100%;
+}
+
+.menu__title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 65px;
+  color: #1f1f1f;
+  padding-bottom: 20px;
+}
+
+.menu__container {
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 24px;
+  width: 100%;
+  padding-top: 31px;
+}
+
+.menu__container .box {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+}
+.menu__container .box:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.box__title {
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 120%;
+  color: #1f1f1f;
+}
+
+.box1 {
+  background-image: url(/images/хлеб.webp);
+  background-position: 75% 25%;
+  background-size: cover;
+  width: 384px;
+  height: 381px;
+}
+
+.box2 {
+  background-image: url(/images/Тропический.webp);
+  background-position: 75% 25%;
+  background-size: cover;
+  width: 384px;
+  height: 381px;
+}
+
+.box3 {
+  background-image: url(/images/синабон.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 384px;
+  height: 381px;
+}
+
+.box4 {
+  background-image: url(/images/какао.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 384px;
+  height: 381px;
+}
+
+/*-----------------Menu end-----------------*/
+/*-----------------About us start-----------------*/
+.about__us {
+  background-color: #1f1f1f;
+}
+
+.history {
+  padding: 51px 0 52px 0;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 27px;
+}
+
+/*-----------------About us end-----------------*/
+/*-----------------Locate start-----------------*/
+.header__liner {
+  margin: 40px 0 30px;
+}
+
+.locale__title {
+  width: 279px;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 65px;
+  color: #1f1f1f;
+  padding-bottom: 20px;
+}
+
+.map__sections {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  width: 588px;
+}
+
+.map__section__address {
+  transition: 0.3s;
+  padding: 26px 65px 37px 14px;
+  margin-bottom: 40px;
+  width: 282px;
+  background-color: #f2f2f2;
+  color: #1f1f1f;
+}
+.map__section__address:hover {
+  transition: 0.3s;
+  transform: scale(1.03);
+}
+
+.address__title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 11px;
+}
+
+.address__text {
+  font-size: 14px;
+}
+
+/*-----------------Locate end-----------------*/
+/*-----------------Footer end-----------------*/
+.footer {
+  background-color: #1f1f1f;
+}
+
+.name {
+  margin: 53px 420px;
+}
+
+.foooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) and (min-width: 500px) {
+  .this__foot .product_pic {
+    transform: translateX(-25vw);
+    z-index: -1;
+  }
+}
+@media (max-width: 1100px) and (min-width: 100px) {
+  .box__title {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 700px) and (min-width: 600px) {
+  .menu__container {
+    grid-template-columns: repeat(2, 45%);
+    align-items: center;
+  }
+  .menu__container .box {
+    height: 30vh;
+  }
+  .history {
+    font-size: 1.2em !important;
+  }
+  .welcome__heading {
+    width: 60vw;
+  }
+  .welcome__text {
+    width: 60vw;
+  }
+}
+@media (max-width: 600px) and (min-width: 100px) {
+  .menu__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .welcome__heading {
+    width: 100%;
+  }
+  .welcome__text {
+    width: 100%;
+  }
+  .map__sections {
+    flex-direction: column;
+    width: 100%;
+  }
+  .map__navitail {
+    width: 100%;
+    overflow: scroll;
+  }
+  .map__section__address {
+    width: 100%;
+  }
+  .history {
+    font-size: 1em !important;
+  }
+  .name {
+    width: 75vw;
+  }
+  .this__product {
+    font-size: 2em;
+  }
+  .this__heading {
+    margin: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .burger__instead,
+  .product_pic {
+    display: none !important;
+  }
+  .menu__container .box {
+    height: 35vh;
+  }
+}/*# sourceMappingURL=major.css.map */
